@@ -20,3 +20,6 @@
 //historico.ExibirCodigo();
 
 // Atividade 4
+Funcionario f = new Funcionario("Fernanda Lima", 4000);
+f.ReajustarSalario(3500); // invalidado
+f.ReajustarSalario(5500); // Valido
