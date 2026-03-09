@@ -4,6 +4,8 @@ internal class Projeto
 {
     private List<string> tarefas = new();
     public string Nome { get; set; }
+    public int QuantidadeTarefas => tarefas.Count;
+ 
 
 
     public void AdicionarTarefa(string tarefa)
@@ -15,7 +17,7 @@ internal class Projeto
     {
         foreach (var tarefa in tarefas)
         {
-            Console.WriteLine($"Total: {tarefa}");
+            Console.WriteLine($"Total: {QuantidadeTarefas}");
         }
     }
 }
