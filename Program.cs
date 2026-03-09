@@ -26,5 +26,10 @@
 
 // Atividade 5
 
+Projeto projeto = new Projeto("Sistema de inventario");
+projeto.AdicionarTarefa("Criar tela de login");
+projeto.AdicionarTarefa("Implementar banco de dados");
+projeto.ExibirTarefas();
+
 
 

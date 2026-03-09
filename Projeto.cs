@@ -21,9 +21,14 @@ internal class Projeto
 
     public void ExibirTarefas()
     {
+        Console.WriteLine($"Projeto: {Nome}");
+        Console.WriteLine($"Tarefas: ");
+
         foreach (var tarefa in tarefas)
         {
-            Console.WriteLine($"Total: {QuantidadeTarefas}");
+            
+            Console.WriteLine($"- {tarefa}");
         }
+        Console.WriteLine($"Total: {QuantidadeTarefas}");
     }
 }
