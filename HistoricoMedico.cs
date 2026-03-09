@@ -12,6 +12,6 @@ internal class HistoricoMedico
 
     public void ExibirCodigo()
     {
-        Console.WriteLine($"Codigo do Pontuario" {CodigoProntuario});
+        Console.WriteLine($"Codigo do Pontuario {CodigoProntuario} ");
     }
 }
