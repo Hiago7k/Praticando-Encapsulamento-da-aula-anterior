@@ -15,7 +15,8 @@
 
 // Atividade 3
 
-Paciente paciente = new Paciente("Luiz Costa", 42);
-HistoricoMedico historico = new HistoricoMedico("XPT-9987");
-historico.ExibirCodigo();
+//Paciente paciente = new Paciente("Luiz Costa", 42);
+//HistoricoMedico historico = new HistoricoMedico("XPT-9987");
+//historico.ExibirCodigo();
 
+// Atividade 4
