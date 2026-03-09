@@ -2,7 +2,20 @@
 
 internal class Veiculo
 {
-    private decimal velocidadeAtual;
+    private double velocidadeAtual;
+
+    public Veiculo(string placa)
+    {
+        Placa = placa;
+    }
+
     public string Placa { get; set; }
     public decimal VelocidadeAtual { get;}
+
+
+    public void AtualizarVelocidade(double novaVelocidade)
+    {
+        velocidadeAtual = novaVelocidade;
+        Console.WriteLine($"Nova velocidade {novaVelocidade}");
+    }
 }
