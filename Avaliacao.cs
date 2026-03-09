@@ -16,6 +16,7 @@ internal class Avaliacao
         if (nota >= 0 && nota <= 10)
         {
             Nota = nota;
+            Console.WriteLine($"Aluno: {Aluno}");
             Console.WriteLine($"Nota atribuida: {nota}");
         }
         else 
