@@ -10,18 +10,17 @@ internal class Avaliacao
     public string Aluno { get;}
     public double Nota { get; private set; }
 
-    private double notaNova;
 
     public void AtribuirNota(double nota)
     {
-        if (Nota >= 10 && Nota <= 0)
+        if (nota >= 0 && nota <= 10)
         {
-            nota = notaNova;
-            Console.WriteLine($"Nota Atribuida {notaNova}");
+            Nota = nota;
+            Console.WriteLine($"Nota atribuida: {nota}");
         }
         else 
         {
-            Console.WriteLine($"Erro: a nota deve estar entr 0 e 10");
+            Console.WriteLine($"Erro: A nota deve estar entre 0 e 10");
         }
     }
 }
