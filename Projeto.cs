@@ -3,6 +3,12 @@
 internal class Projeto
 {
     private List<string> tarefas = new();
+
+    public Projeto(string nome)
+    {
+        Nome = nome;
+    }
+
     public string Nome { get; set; }
     public int QuantidadeTarefas => tarefas.Count;
  
