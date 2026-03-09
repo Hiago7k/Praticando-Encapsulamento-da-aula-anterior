@@ -16,6 +16,6 @@ internal class Veiculo
     public void AtualizarVelocidade(double novaVelocidade)
     {
         velocidadeAtual = novaVelocidade;
-        Console.WriteLine($"Nova velocidade {novaVelocidade}");
+        Console.WriteLine($"Velocidade atual {novaVelocidade}");
     }
 }
