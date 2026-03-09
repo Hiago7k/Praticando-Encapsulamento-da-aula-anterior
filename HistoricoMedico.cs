@@ -2,6 +2,11 @@
 
 internal class HistoricoMedico
 {
+    public HistoricoMedico(string codigoProntuario)
+    {
+        CodigoProntuario = codigoProntuario;
+    }
+
     public string CodigoProntuario { get; }
 
 
