@@ -10,4 +10,12 @@ internal class Projeto
     {
         tarefas.Add(tarefa);
     }
+
+    public void ExibirTarefas()
+    {
+        foreach (var tarefa in tarefas)
+        {
+            Console.WriteLine($"Total: {tarefa}");
+        }
+    }
 }
