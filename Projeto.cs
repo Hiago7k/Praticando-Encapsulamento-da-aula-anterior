@@ -4,4 +4,10 @@ internal class Projeto
 {
     private List<string> tarefas = new();
     public string Nome { get; set; }
+
+
+    public void AdicionarTarefa(string tarefa)
+    {
+        tarefas.Add(tarefa);
+    }
 }
