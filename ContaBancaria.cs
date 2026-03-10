@@ -2,4 +2,13 @@
 
 internal class ContaBancaria
 {
+    private decimal Saldo;
+
+    public ContaBancaria(decimal saldo, string titular)
+    {
+        Saldo = saldo;
+        Titular = titular;
+    }
+
+    public string Titular { get;}
 }
