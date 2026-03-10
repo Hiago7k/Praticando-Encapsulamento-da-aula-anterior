@@ -2,13 +2,20 @@
 
 internal class ContaBancaria
 {
-    private decimal Saldo;
+    private double Saldo;
 
-    public ContaBancaria(decimal saldo, string titular)
+    public ContaBancaria(double saldo, string titular)
     {
         Saldo = saldo;
         Titular = titular;
     }
 
+    public double Saldo { get; }
+
     public string Titular { get;}
+
+    public void Sacar(double valor)
+    {
+        
+    }
 }
