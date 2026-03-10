@@ -17,8 +17,10 @@ internal class ContaBancaria
     public void Sacar(double valor)
     {
         SegurancaConta validador = new SegurancaConta();
-        validador.ValidarSaque(valor);
+        validador.ValidarSaque(Saldo);
         var saldo = Saldo - valor;
-        Console.WriteLine($"Saldo atual de R$ {saldo}");
+        //Console.WriteLine($"Seu saldo atual e de: R$ {saldo}");
+
     }
+
 }
