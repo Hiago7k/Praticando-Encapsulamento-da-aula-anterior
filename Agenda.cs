@@ -17,14 +17,17 @@ internal class Agenda
 
     public bool AdicionarContato(Contato contato)
     {
-        if (contatos.Contains(contato))
-        {
-            Console.WriteLine($"Contato com esse nome ja esta na agenda.");
-        }
-        else 
-        {
-            contatos.Add(contato);
-        }
+        return contatos.Contains(contato);
+
+        //if (contatos.Contains(contato))
+        //{
+        //    Console.WriteLine("Erro usuario ja esta na lista");
+        //}
+        //else 
+        //{
+        //    contatos.Add(contato);
+        //}
+        
     }
 
 
