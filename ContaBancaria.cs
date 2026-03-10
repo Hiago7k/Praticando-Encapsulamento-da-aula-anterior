@@ -2,13 +2,13 @@
 
 internal class ContaBancaria
 {
-    private double Saldo;
-
-    public ContaBancaria(double saldo, string titular)
+   private double saldo;
+    public ContaBancaria(string titular, double saldo)
     {
-        Saldo = saldo;
         Titular = titular;
+        Saldo = saldo;
     }
+
 
     public double Saldo { get; }
 
@@ -16,6 +16,9 @@ internal class ContaBancaria
 
     public void Sacar(double valor)
     {
-        
+        SegurancaConta validador = new SegurancaConta();
+        validador.ValidarSaque(valor);
+        var saldo = Saldo - valor;
+        Console.WriteLine($"Saldo atual de R$ {saldo}");
     }
 }

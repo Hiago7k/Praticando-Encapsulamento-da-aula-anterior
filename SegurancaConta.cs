@@ -3,9 +3,9 @@ namespace Praticando_Encapsulamento_da_aula_anterior;
 
 internal class SegurancaConta
 {
-    public ContaBancaria MinhaConta;
+    public ContaBancaria Dados;
 
-    public void ValidarSaque(double valor)
+    internal void ValidarSaque(double valor)
     {
         if (valor > 1000)
         {
@@ -13,7 +13,7 @@ internal class SegurancaConta
         }
         else 
         {
-            Console.WriteLine("Saque realizado com sucesso.");
+            Console.WriteLine("Saque realizado com sucesso");
         }
     }
 }

@@ -26,10 +26,18 @@
 
 // Atividade 5
 
-Projeto projeto = new Projeto("Sistema de inventario");
-projeto.AdicionarTarefa("Criar tela de login");
-projeto.AdicionarTarefa("Implementar banco de dados");
-projeto.ExibirTarefas();
+//Projeto projeto = new Projeto("Sistema de inventario");
+//projeto.AdicionarTarefa("Criar tela de login");
+//projeto.AdicionarTarefa("Implementar banco de dados");
+//projeto.ExibirTarefas();
+
+
+// Atividade 6
+ContaBancaria conta = new ContaBancaria("Carlos Silva", 2500);
+conta.Sacar(1500);
+Console.WriteLine();
+conta.Sacar(800);
+
 
 
 
