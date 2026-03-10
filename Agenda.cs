@@ -2,7 +2,7 @@
 
 internal class Agenda
 {
-    private readonly List<Contato>  contatos;
+    private readonly List<Contato>  contatos = new List<Contato>();
 
     public Agenda(string proprietario)
     {
@@ -17,28 +17,28 @@ internal class Agenda
 
     public bool AdicionarContato(Contato contato)
     {
-        return contatos.Contains(contato);
 
-        //if (contatos.Contains(contato))
-        //{
-        //    Console.WriteLine("Erro usuario ja esta na lista");
-        //}
-        //else 
-        //{
-        //    contatos.Add(contato);
-        //}
-        
+        if (!contatos.Contains(contato))
+        {
+            contatos.Add(contato);
+            return true;
+
+        }
+        else
+        {
+            Console.WriteLine("erro usuario ja esta na lista");
+            return false;
+        }
     }
 
 
     public void ListarContatos()
     {
-        foreach (var contato in contatos)
+        foreach (var item in contatos)
         {
-            Console.WriteLine($"Contatos:");
-            Console.WriteLine(contato);
+            Console.WriteLine(item);
         }
-        Console.WriteLine($"Total de contatos: {QuantidadeContatos}");
+      //  Console.WriteLine($"Total de contatos: {QuantidadeContatos}");
     }
   
 }
