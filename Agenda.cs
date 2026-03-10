@@ -5,6 +5,8 @@ internal class Agenda
     private readonly List<Contato>  contatos;
     public string Proprietario { get; }
 
+    public int QuantidadeContatos => contatos.Count;
+
 
 
     public bool AdicionarContato(Contato contato)
@@ -27,6 +29,7 @@ internal class Agenda
             Console.WriteLine($"Contatos:");
             Console.WriteLine(contato);
         }
+        Console.WriteLine($"Total de contatos: {QuantidadeContatos}");
     }
   
 }
