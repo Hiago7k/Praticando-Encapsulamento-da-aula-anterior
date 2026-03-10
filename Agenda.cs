@@ -19,5 +19,14 @@ internal class Agenda
         }
     }
 
+
+    public void ListarContatos()
+    {
+        foreach (var contato in contatos)
+        {
+            Console.WriteLine($"Contatos:");
+            Console.WriteLine(contato);
+        }
+    }
   
 }
