@@ -39,6 +39,7 @@
 //conta.Sacar(800);
 
 // Atividade 7
-
+Agenda agenda = new Agenda("Marina Souza");
+agenda.AdicionarContato(new Contato("Carlos", "11998887777"));
 
 
