@@ -3,6 +3,12 @@
 internal class Agenda
 {
     private readonly List<Contato>  contatos;
+
+    public Agenda(string proprietario)
+    {
+        Proprietario = proprietario;
+    }
+
     public string Proprietario { get; }
 
     public int QuantidadeContatos => contatos.Count;
