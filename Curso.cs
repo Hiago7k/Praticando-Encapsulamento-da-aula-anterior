@@ -2,6 +2,9 @@
 
 internal class Curso
 {
+    private  List<string> matricula = new List<string>();
+
+
     public string Nome { get;  }
     public int VagasTotais { get; }
 }
