@@ -39,10 +39,18 @@
 //conta.Sacar(800);
 
 // Atividade 7
-Agenda agenda = new Agenda("Marina Souza");
-agenda.AdicionarContato(new Contato("Carlos", "11998887777"));
-agenda.AdicionarContato(new Contato("Carlos", "11998887777")); // duplicado
-agenda.AdicionarContato(new Contato("Julia", "21988776655"));
-agenda.ListarContatos();
+//Agenda agenda = new Agenda("Marina Souza");
+//agenda.AdicionarContato(new Contato("Carlos", "11998887777"));
+//agenda.AdicionarContato(new Contato("Carlos", "11998887777")); // duplicado
+//agenda.AdicionarContato(new Contato("Julia", "21988776655"));
+//agenda.ListarContatos();
 
 
+// Atividade 8
+Estudante estudante = new Estudante("Lucas Rocha");
+estudante.Nota1 = 7.5;
+estudante.Nota2 = 5.0;
+
+Console.WriteLine($"Estudante: {estudante.Nome}");
+Console.WriteLine($"Media: {estudante.Media}");
+Console.WriteLine($"Situacao {estudante.Situacao}");

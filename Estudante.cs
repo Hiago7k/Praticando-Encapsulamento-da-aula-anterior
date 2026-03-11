@@ -2,14 +2,31 @@
 
 internal class Estudante
 {
+    public Estudante(string nome)
+    {
+        Nome = nome;
+    }
+
     public string Nome { get;  }
-    public int Nota1 { get; set; }
-    public int Nota2 { get; set; }
+    public double Nota1 { get;  set; }
+    public double Nota2 { get;  set; }
 
-    public decimal Media { get;  }
-    // media de nota1 + nota2 / 2
+    public double Media => (Nota1 + Nota2) /2;
+   
 
-    public string Situacao { get;  }
-    // Aprovado nota maior ou igual a 6
-    // Reprovado se nota menor que 6
+    public string Situacao
+    {
+        get 
+        {
+            if (Media >= 6)
+            {
+                return "Aprovado";
+            }
+            else 
+            {
+                return "Reprovado";
+            }
+
+        }
+    }
 }
