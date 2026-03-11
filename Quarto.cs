@@ -2,6 +2,11 @@
 
 internal class Quarto
 {
+    public Quarto(int numero)
+    {
+        Numero = numero;
+    }
+
     public int Numero { get; set; }
     public double ValorDiaria { get; set; }
     // somente valores Positivos
