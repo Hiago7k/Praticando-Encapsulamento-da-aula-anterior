@@ -47,10 +47,20 @@
 
 
 // Atividade 8
-Estudante estudante = new Estudante("Lucas Rocha");
-estudante.Nota1 = 7.5;
-estudante.Nota2 = 5.0;
+//Estudante estudante = new Estudante("Lucas Rocha");
+//estudante.Nota1 = 7.5;
+//estudante.Nota2 = 5.0;
 
-Console.WriteLine($"Estudante: {estudante.Nome}");
-Console.WriteLine($"Media: {estudante.Media}");
-Console.WriteLine($"Situacao {estudante.Situacao}");
+//Console.WriteLine($"Estudante: {estudante.Nome}");
+//Console.WriteLine($"Media: {estudante.Media}");
+//Console.WriteLine($"Situacao {estudante.Situacao}");
+
+// Atividade 9
+//Curso curso = new Curso("Logica de Programacao", 2);
+//curso.Matricular(new Estudante("Rafaela"));
+//curso.Matricular(new Estudante("Joao"));
+//curso.Matricular(new Estudante("Mirela")); // passou o limite de vagas
+
+// Ativdade 10
+
+

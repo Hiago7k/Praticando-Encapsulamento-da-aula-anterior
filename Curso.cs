@@ -1,4 +1,6 @@
-﻿namespace Praticando_Encapsulamento_da_aula_anterior;
+﻿using System.Linq;
+
+namespace Praticando_Encapsulamento_da_aula_anterior;
 
 internal class Curso
 {
@@ -11,19 +13,20 @@ internal class Curso
     }
 
     public string Nome { get;  }
-    public int VagasTotais { get; }
+    public int VagasTotais { get; set; }
+  
 
 
     public bool Matricular(Estudante estudante)
     {
-        if (matricula.Contains(vagasTotais))
+        if (matricula.Any(estudante = VagasTotais > estudante))
         {
-            // tem vaga
+            Console.WriteLine($"Estudante matriculado com sucesso");
             return true;
         }
         else 
         {
-            // sem vaga
+            Console.WriteLine($"Erro: nao ha vagas disponiveis para esse curso");
             return false;
         }
     }
