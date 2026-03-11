@@ -8,6 +8,14 @@ internal class Quarto
     }
 
     public int Numero { get; set; }
-    public double ValorDiaria { get; set; }
-    // somente valores Positivos
+    public double ValorDiaria 
+    {
+        get { return ValorDiaria }
+        set 
+        {
+            if (ValorDiaria <= 0)
+                Console.WriteLine($"O valor deve ser positivo");
+        }
+    }
+
 }
