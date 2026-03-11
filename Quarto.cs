@@ -10,7 +10,7 @@ internal class Quarto
     public int Numero { get; set; }
     public double ValorDiaria 
     {
-        get { return ValorDiaria }
+        get { return ValorDiaria; }
         set 
         {
             if (ValorDiaria <= 0)

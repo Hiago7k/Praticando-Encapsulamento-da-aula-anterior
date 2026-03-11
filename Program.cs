@@ -62,8 +62,14 @@
 //curso.Matricular(new Estudante("Mirela")); // passou o limite de vagas
 
 // Ativdade 10
+
+
 Hospede hospeda = new Hospede("Juliana Moura");
 Quarto quarto = new Quarto(101);
 quarto.ValorDiaria = 250;
 
 Reserva reserva = new Reserva(hospeda, quarto, 3);
+
+Console.WriteLine($"Reserva para {reserva.hospede}");
+Console.WriteLine($"Quarto: para {reserva.quarto}");
+Console.WriteLine($"Valor total de:  {quarto.ValorDiaria}");

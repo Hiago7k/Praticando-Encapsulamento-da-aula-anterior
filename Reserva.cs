@@ -4,15 +4,16 @@ internal class Reserva
 {
     private int diarias;
 
-    public Reserva(Hospede hospede, Quarto quarto, Quarto valorDiaria)
+    public Reserva(Hospede hospede, Quarto quarto, int diarias)
     {
         this.hospede = hospede;
         this.quarto = quarto;
-        ValorDiaria = valorDiaria;
+        this.diarias = diarias;
     }
 
-    public Hospede hospede { get;}
-    public Quarto quarto { get;}
-    public Quarto ValorDiaria { get;}
+    public Hospede hospede { get; }
+    public Quarto quarto { get; }
+    
 
 }
+
