@@ -2,7 +2,7 @@
 
 internal class Curso
 {
-    private  List<string> matricula = new List<string>();
+    private  List<Estudante> matricula = new List<Estudante>();
 
 
     public string Nome { get;  }
